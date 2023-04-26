@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://kids-bible-clubs.github.io/test"
+baseURL = "https://kids-bible-clubs.github.io/website"
 title = "Kid's Bible Clubs"
 theme = "kids-bible-clubs-website"
 # post pagination

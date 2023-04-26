@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Kid&#39;s Bible Clubs</title>
-    <link>https://kids-bible-clubs.github.io/test/categories/</link>
+    <link>https://kids-bible-clubs.github.io/website/categories/</link>
     <description>Recent content in Categories on Kid&#39;s Bible Clubs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2023 Kids&#39; Bible Clubs</copyright><atom:link href="https://kids-bible-clubs.github.io/test/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2023 Kids&#39; Bible Clubs</copyright><atom:link href="https://kids-bible-clubs.github.io/website/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -3,7 +3,7 @@ title: Volunteer Service Opportunities
 ---
 
 <div class="text-center">
-<img src="/test/images/VolunteerGreeting.webp" />
+<img src="/website/images/VolunteerGreeting.webp" />
 </div>
 
 - Bible Study Teachers and Assistants
@@ -22,6 +22,6 @@ title: Volunteer Service Opportunities
 - Creative Arts Ministry Groups
 
 <div class="text-center">
-<img width="45%" src="/test/images/Volunteer-J-Bparty.webp" />
-<img width="45%" src="/test/images/Voluntters.webp" />
+<img width="45%" src="/website/images/Volunteer-J-Bparty.webp" />
+<img width="45%" src="/website/images/Voluntters.webp" />
 </div>

@@ -121,7 +121,7 @@ call_to_action:
     link : "contact/"
 ---
 
-<center><img src="/test/images/home.webp" alt="group photo" style="border-radius: 500px;" width="65%"/></center>
+<center><img src="/website/images/home.webp" alt="group photo" style="border-radius: 500px;" width="65%"/></center>
 
 We reach out to kids in our community to provide opportunities for a **starting point**, exposing them to the **Bible and things of God** so they can **come to know Him through His Son, Jesus Christ**.
 

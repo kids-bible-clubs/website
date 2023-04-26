@@ -4,7 +4,7 @@ title: "Summer Camp"
 
 #### Exciting Camp Opportunity for KBC Kids!
 
-<img src="/test/images/summercamp.webp">
+<img src="/website/images/summercamp.webp">
 
 Just as KBC exists to provide opportunities for spiritual growth specifically to un-churched and at-risk kids, **Camp Grace** is a ministry solely dedicated to serving the under-served, inner-city, and impoverished youth in Georgia with a high-quality Christian camp. Sounds like a match made in heaven, right?
 
