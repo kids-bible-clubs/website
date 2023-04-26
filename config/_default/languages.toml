@@ -1,0 +1,22 @@
+############################# English ############################
+[en]
+languageName = "En"
+title = "Kid's Bible Clubs"
+contentDir = "content/english" # content/english
+weight = 1
+########### footer content ##########
+footer_menu_left = ""
+footer_menu_middle = ""
+footer_menu_right = ""
+footer_content = "Copyright © 2023 Kids' Bible Clubs"
+# copyright
+copyright = "Copyright © 2023 Kids' Bible Clubs"
+enableFooterLogo = true
+enableFooterMenu = true
+
+############################# Spanish ############################
+#[es]
+#languageName = "Es"
+#title = "Kid's Bible Clubs"
+#contentDir = "content/espanol" # content/spanish
+#weight = 2

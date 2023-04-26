@@ -1,0 +1,69 @@
+# main menu
+[[main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[main]]
+name = "About Us"
+url = "about"
+weight = 2
+
+[[main]]
+name = "Contact"
+url = "contact"
+weight = 9
+
+[[main]]
+weight = 6
+name = "Events"
+hasChildren = true
+
+  [[main]]
+  parent = "Events"
+  name = "Happy Birthday Jesus"
+  url = "happy-birthday-jesus/"
+  weight = 1
+
+  [[main]]
+  parent = "Events"
+  name = "Summer Camp at KBC"
+  url = "summer-camp/"
+  weight = 2
+
+
+
+[[main]]
+name = "Newsletters"
+url = "newsletters/"
+weight = 7
+
+[[main]]
+name = "Volunteer"
+url = "volunteer/"
+weight = 8
+
+
+# footer menu left
+[[footer_middle]]
+name = "Donate"
+pageref = "images/donate.png"
+url = "https://www.paypal.com/donate?token=EiSULSrbh4xcvJeXxHiDjfF9QXkpSrEAXcoBk6WhLU6r80498gDeAmbSXVjthj31RCnxRn3V5L1Otu3V"
+
+#[[footer_left]]
+#name = "Quick Start"
+#url = "#"
+
+#[[footer_left]]
+#name = "Pricing"
+#url = "pricing/"
+
+# footer menu middle
+#[[footer_middle]]
+#name = "Pricing"
+#url = "pricing/"
+
+# footer menu right
+#[[footer_right]]
+#name = "Privacy Policy"
+#url = "privacy-policy/"
