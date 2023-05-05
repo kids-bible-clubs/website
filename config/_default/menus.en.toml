@@ -45,10 +45,10 @@ weight = 8
 
 
 # footer menu left
-[[footer_middle]]
-name = "Donate"
-pageref = "images/donate.png"
-url = "https://www.paypal.com/donate?token=EiSULSrbh4xcvJeXxHiDjfF9QXkpSrEAXcoBk6WhLU6r80498gDeAmbSXVjthj31RCnxRn3V5L1Otu3V"
+#[[footer_middle]]
+#name = "Donate"
+#pageref = "images/donate.png"
+#url = "https://www.paypal.com/donate?token=EiSULSrbh4xcvJeXxHiDjfF9QXkpSrEAXcoBk6WhLU6r80498gDeAmbSXVjthj31RCnxRn3V5L1Otu3V"
 
 #[[footer_left]]
 #name = "Quick Start"

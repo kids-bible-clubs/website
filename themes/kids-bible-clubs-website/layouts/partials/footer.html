@@ -1,0 +1,113 @@
+<footer class="bg-light section  pb-0" style="padding-top: 20px;">
+  <div class="container">
+    {{ if site.Params.enableFooterMenu }}
+    <div class="row">
+
+
+
+      <div class="col-md-3 col-sm-6 mb-5">
+        {{ if site.Menus.footer_left }}
+        {{ if ne site.Menus.footer_menu_left "" }}
+        <div class="h3 mb-4">{{ site.Params.footer_menu_left }}</div>
+        {{ end }}
+        <ul style="padding-top: 10px;" class="list-unstyled footer-list">
+
+
+
+          {{ range site.Menus.footer_left }}
+
+          {{ if .PageRef }}
+          <li>
+            <a class="d-block h3 mb-3" href="{{ .URL | relURL }}">
+              <img src="{{.PageRef }}" height="100px" />
+            </a>
+          </li>
+          {{ else  }}
+
+          <li><a href="{{ .URL | relURL  }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          {{ end }}
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      <div class="col-md-3 col-sm-6 mb-5">
+        {{ if site.Menus.footer_middle }}
+        {{ if ne site.Menus.footer_menu_middle "" }}
+        <div class="h3 mb-4">{{ site.Params.footer_menu_middle }}</div>
+        {{ end }}
+        <ul style="margin-top: -30px;" class="list-unstyled footer-list">
+          {{ range site.Menus.footer_middle }}
+
+          {{ if .PageRef }}
+
+          <li>
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="QC949N9CP64BA">
+              <input type="image" src="{{.PageRef | relURL }}" height="100px" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+              <img class=" lazyloaded" alt="" border="0" src="{{.PageRef | relURL }}" data-src="{{.PageRef | relURL }}" width="1" height="1">
+              <noscript>
+                <img class="lazyload" alt="" border="0" src="{{.PageRef | relURL }}" width="1" height="1" />
+              </noscript>
+            </form>
+            <!-- <a class="d-block h3 mb-3" href="{{ .URL | relURL | absLangURL}}">
+              <img src="{{.PageRef  }}" height="100px" />
+            </a> -->
+          </li>
+
+          {{ else  }}
+
+          <li><a href="{{ .URL | relURL  }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          {{ end }}
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      <div class="col-md-3 col-sm-6 mb-5">
+        {{ if site.Menus.footer_right }}
+        {{ if ne site.Menus.footer_menu_right "" }}
+        <div class="h3 mb-4">{{ site.Params.footer_menu_right }}</div>
+        {{ end }}
+        <ul class="list-unstyled footer-list">
+          {{ range site.Menus.footer_right }}
+
+          {{ if .PageRef }}
+
+          <li>
+            <a class="d-block h3 mb-3" href="{{ .URL | absLangURL}}">
+              <img src="{{.PageRef | relURL }}" height="100px" />
+            </a>
+          </li>
+
+          {{ else  }}
+
+          <li><a href="{{ .URL | relURL  }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          {{ end }}
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-5">
+        {{ if site.Params.enableFooterLogo }}
+        <a class="d-block h3 mb-3" href="{{ site.BaseURL | absLangURL}}">
+          {{ with site.Params.footer_logo}}
+          <img width="{{site.Params.footer_logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
+          {{ else }}{{site.Title}}{{end}}
+        </a>
+        {{ end }}
+        <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
+        {{ with site.Params.social }}
+        <ul class="list-inline social-icons">
+          {{ range . }}
+          <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}"><i class="{{ .icon }}"></i></a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+
+
+    </div>
+    {{ end }}
+
+  </div>
+</footer>

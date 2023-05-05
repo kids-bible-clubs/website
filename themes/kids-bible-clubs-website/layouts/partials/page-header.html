@@ -1,0 +1,24 @@
+<section class="section pb-0">
+  <div class="container text-center">
+
+    <div  class="text-right">
+      <form  action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="QC949N9CP64BA">
+        <input type="image" src="{{site.Params.donate_image | relURL }}" height="70px" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+        <img class=" lazyloaded" alt="" border="0" src="{{site.Params.donate_image | relURL }}" data-src="{{site.Params.donate_image | relURL }}" width="1" height="1">
+        <noscript>
+          <img class="lazyload" alt="" border="0" src="{{site.Params.donate_image | relURL }}" width="1" height="1" />
+        </noscript>
+      </form>
+      <!-- <a class="d-block h3 mb-3" href="{{ .URL | relURL | absLangURL}}">
+        <img src="{{site.Params.donate_image  }}" height="100px" />
+      </a> -->
+    </div>
+
+    <h1 class="display-3">{{ .Title | markdownify }}</h1>
+    {{ with .Params.subtitle }}
+    <p>{{ . | markdownify }}</p>
+    {{ end }}
+
+  </div>
+</section>

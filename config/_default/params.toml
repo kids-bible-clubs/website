@@ -5,6 +5,8 @@ logo_width = "300px"
 footer_logo = "images/oldkbclogo.png"
 footer_logo_width = "400px"
 favicon = "images/favicon.ico"
+donate_image = "images/donate.png"
+
 
 # OpenGraph / Twitter Card metadata
 description = "Because every child matters to Jesus"

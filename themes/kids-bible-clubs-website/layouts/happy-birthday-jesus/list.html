@@ -1,0 +1,130 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+<!-- <section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h2 class="section-title">{{ .Params.top.title | markdownify }}</h2>
+        <img src="{{ .Params.top.image | relURL }}" style="border-radius: 1000px" alt="" class="img-fluid">
+      </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+{{ with .Params.event }}
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10 text-center">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+      </div>
+      <div class="col-md-5 order-1 order-md-1 mb-4 mb-md-0">
+        <div class="text-center">
+          <img  src="{{ .image | relURL }}" width="50%"  style="border-radius: 1000px" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-5 order-2 order-md-2">
+        <!-- <h2 class="section-title">{{ .title | markdownify }}</h2> -->
+        <p>{{ .content | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.list }}
+<section class="section bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10 text-center">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+      </div>
+      <div class="col-10">
+        <ul>
+          {{ range $k,$v := .items }}
+          <li>
+            <div class="row">
+            <div class="col-md-1 mb-4 mb-md-0">
+              <b>{{ $k | title }}</b>:
+            </div>
+            <div class="col-md-9 md-6">
+              {{ $v }}
+            </div>
+          </div>
+          <br />
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+
+<!-- feature -->
+{{ with .Params.feature }}
+{{ if .enable }}
+<section class="section ">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+      </div>
+      {{ range .feature_item }}
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="feature-card text-center">
+          <i class="{{.icon}} mb-3"></i>
+          <h4 class="mb-2">{{ .name | title }}</h4>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /feature -->
+
+<!-- feature -->
+{{ with .Params.quotes }}
+{{ if .enable }}
+<section class="section bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+      </div>
+      {{ range .items }}
+      <div class="col-md-10 content">
+          {{ . | markdownify }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /feature -->
+
+
+
+
+
+
+<!-- <section class="section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="content">{{ .Content }}</div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+{{ end }}
